@@ -12,6 +12,9 @@ export default {
         "fond-plats": 'url("/src/assets/images/fond-breuvage.jpg")',
         "fond-dessert": 'url("/src/assets/images/fond-breuvage.jpg")',
       },
+      rotate: {
+        270: "270deg",
+      },
     },
   },
   plugins: [],
