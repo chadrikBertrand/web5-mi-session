@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
 import FicheMenu from "./FicheMenu";
+import TitreSection from "./TitreSection";
 const SectionMenu = ({ section }) => {
   const liste = section.items.map((item, i) => {
     return <FicheMenu key={i} item={item} />;
   });
   return (
     <section className="w-11/12 m-auto ">
-      <h2 className="h-16 flex justify-center items-center">
-        {section.nomCategorie}
-      </h2>
+      <TitreSection nomCat={section.nomCategorie} />
       {liste}
     </section>
   );

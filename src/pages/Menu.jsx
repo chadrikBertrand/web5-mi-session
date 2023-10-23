@@ -9,9 +9,9 @@ const Menu = () => {
   });
 
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col justify-center items-center">
       <Header />
-      <h1 className="Titre-page">Mon Menu</h1>
+      <h1 className="Titre-page mt-6 text-4xl">Mon Menu</h1>
       {liste}
     </section>
   );
