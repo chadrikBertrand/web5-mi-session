@@ -6,7 +6,7 @@ const SectionMenu = ({ section }) => {
     return <FicheMenu key={i} item={item} />;
   });
   return (
-    <section className="w-11/12 m-auto ">
+    <section className="w-11/12 m-auto mt-9">
       <TitreSection nomCat={section.nomCategorie} />
       {liste}
     </section>
