@@ -16,12 +16,12 @@ const FicheMenu = () => {
     */
   }
   return (
-    <div className="fiche-menu ">
+    <div className="fiche-menu flex flex-col justify-center relative">
       <div className="image relative">
         <img
           src={DBmenu.entree.items[0].img}
           alt={DBmenu.entree.items[0].nom}
-          className="absolute"
+          className="absolute object-fill"
           style={{ width: "21em" }}
         />
         <AiFillPlusCircle className="ajout absolute right-8 bottom-0 scale-150" />
