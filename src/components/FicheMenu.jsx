@@ -16,19 +16,25 @@ const FicheMenu = () => {
     */
   }
   return (
-    <div className="fiche-menu flex flex-col justify-center relative">
-      <div className="image relative">
+    <div
+      className="fiche-menu flex flex-col relative m-auto mt-6 items-center justify-center rounded-3xl shadow-2xl"
+      style={{ width: "90%" }}
+    >
+      <div
+        className="image relative flex items-start"
+        style={{ width: "100%" }}
+      >
         <img
           src={DBmenu.entree.items[0].img}
           alt={DBmenu.entree.items[0].nom}
-          className="absolute object-fill"
-          style={{ width: "21em" }}
+          style={{ height: "20em" }}
+          className="relative object-cover object-center justify-start items-center flex w-full h-full rounded-t-3xl"
         />
-        <AiFillPlusCircle className="ajout absolute right-8 bottom-0 scale-150" />
+        <AiFillPlusCircle className="ajout absolute right-8 bottom-4 text-5xl" />
       </div>
-      <div className="info-item">
-        <p className="nom-item">{DBmenu.entree.items[0].nom}</p>
-        <p className="prix">{DBmenu.entree.items[0].prix}</p>
+      <div className="info-item relative flex flex-row h-16 items-center w-full place-content-between p-5">
+        <p className="nom-item justify-start">{DBmenu.entree.items[0].nom}</p>
+        <p className="prix justify-end">{DBmenu.entree.items[0].prix}</p>
       </div>
     </div>
   );
