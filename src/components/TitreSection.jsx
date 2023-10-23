@@ -1,8 +1,12 @@
-const TitreSection = ({ nomCat }) => {
+import { AiOutlineCaretDown } from "react-icons/ai";
+const TitreSection = ({ nomcat }) => {
   return (
-    <h2 className="h-16 flex justify-center items-center bg-fond-breuvage text-white text-2xl">
-      {nomCat}
-    </h2>
+    <div className="titre-section flex flex-row bg-fond-breuvage justify-center items-center m-auto">
+      <h2 className="h-16 flex justify-center items-center text-white text-2xl">
+        {nomcat}
+      </h2>
+      <AiOutlineCaretDown className="text-white" />
+    </div>
   );
 };
 export default TitreSection;
