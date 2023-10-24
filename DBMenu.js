@@ -4,17 +4,17 @@ const menu = {
             items:[
                 {
                     nom:"Café",
-                    img:"src/assets/ana-tavares-598958-unsplash.jpg",
+                    img:"src/assets/cafe.jpg",
                     prix:"3.50$",
                 },
                 {
                     nom:"Boissons gazeuses",
-                    img:"src/assets/sean-mcclintock-789423-unsplash.jpg",
+                    img:"src/assets/boisson-gaseuses.jpg",
                     prix:"3.00$",
                 },
                 {
                     nom:"Thé glacé",
-                    img:"src/assets/sean-mcclintock-789423-unsplash.jpg",
+                    img:"src/assets/the-glacee.jpg",
                     prix:"4.00$",
                 },
             ]
