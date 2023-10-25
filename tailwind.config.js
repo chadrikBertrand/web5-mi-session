@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "fond-breuvage": 'url("src/assets/fond-breuvage.jpg")',
+        "fond-breuvage": "linear-gradient(to left, black, transparent), url('/src/assets/fond-breuvage.jpg')",
         "fond-entree": 'url("/src/assets/images/fond-breuvage.jpg")',
         "fond-plats": 'url("/src/assets/images/fond-breuvage.jpg")',
         "fond-dessert": 'url("/src/assets/images/fond-breuvage.jpg")',

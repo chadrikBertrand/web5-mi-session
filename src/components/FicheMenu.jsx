@@ -29,7 +29,7 @@ const FicheMenu = ({ item }) => {
           style={{ height: "20em" }}
           className="relative object-cover object-center justify-start items-center flex w-full h-full rounded-t-3xl"
         />
-        <BsPlus className="ajout absolute right-8 bottom-4 text-5xl rounded-full bg-cyan-300" />
+        <BsPlus className="ajout absolute right-8 bottom-4 text-5xl rounded-full bg-jaune-reg text-white" />
       </div>
       <div className="info-item relative flex flex-row h-16 items-center w-full place-content-between p-5">
         <p className="nom-item justify-start">{nom}</p>
