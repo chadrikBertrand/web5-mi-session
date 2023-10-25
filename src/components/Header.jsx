@@ -5,8 +5,9 @@ const Header = () => {
   return (
     <header className="h-full flex flex-row justify-content items-center">
       <div className="logo">
-        <img src={logo} alt="logo" className="m-auto w-full h-52 p-8" />
+        <img src={logo} alt="logo" className="m-auto w-full h-44 p-8" />
       </div>
+
       <MenuBurger />
     </header>
   );

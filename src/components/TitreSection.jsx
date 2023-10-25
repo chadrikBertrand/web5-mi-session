@@ -9,14 +9,19 @@ const TitreSection = ({ nomcat }) => {
     }
   };
   return (
-    <div className="titre-section flex flex-row bg-fond-breuvage m-auto place-content-between items-center" style={{height:"100px"}}>
+    <div
+      className="titre-section flex flex-row bg-fond-breuvage bg-cover bg-right m-auto place-content-between items-center"
+      style={{ height: "100px" }}
+    >
       <h2 className="h-16 flex justify-center items-center text-2xl font-cool text-rouge-pale ml-4 text-4xl">
         {nomcat}
       </h2>
 
       <AiOutlineCaretDown
         className={
-          open ? "text-rouge-pale text-5xl rotate-270 mr-4" : "text-rouge-pale text-5xl mr-4"
+          open
+            ? "text-rouge-pale text-5xl rotate-270 mr-4"
+            : "text-rouge-pale text-5xl mr-4"
         }
         onClick={toggleButton}
       />

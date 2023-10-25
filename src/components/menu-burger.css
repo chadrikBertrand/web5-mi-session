@@ -1,6 +1,6 @@
 svg.menu-burger {
   position: absolute;
-  top: 5em;
+  top: 3.8em;
   right: 2.5em;
   & rect {
     border-radius: 70%;
