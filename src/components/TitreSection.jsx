@@ -4,7 +4,6 @@ const TitreSection = ({ nomcat }) => {
   const [open, setOpen] = useState(false);
   const toggleButton = () => {
     {
-      console.log(open);
       setOpen(!open);
     }
   };
@@ -20,8 +19,8 @@ const TitreSection = ({ nomcat }) => {
       <AiOutlineCaretDown
         className={
           open
-            ? "text-rouge-pale text-5xl rotate-270 mr-4"
-            : "text-rouge-pale text-5xl mr-4"
+            ? "text-rouge-pale text-5xl rotate-270 mr-8"
+            : "text-rouge-pale text-5xl mr-8"
         }
         onClick={toggleButton}
       />
