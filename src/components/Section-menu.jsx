@@ -1,13 +1,24 @@
 import PropTypes from "prop-types";
 import FicheMenu from "./FicheMenu";
 import TitreSection from "./TitreSection";
+import { useState } from "react";
 const SectionMenu = ({ section }) => {
+  const [isChildValue, setChildValue] = useState(false);
+  const receiveChildValue = (value) => {
+    setChildValue(value);
+    console.log(value);
+  };
+
   const liste = section.items.map((item, i) => {
-    return <FicheMenu key={i} item={item} />;
+    return isChildValue ? <FicheMenu key={i} item={item} /> : null;
   });
+
   return (
     <section className="w-11/12 m-auto mt-9">
-      <TitreSection nomcat={section.nomCategorie} />
+      <TitreSection
+        nomcat={section.nomCategorie}
+        sendValueToParent={receiveChildValue}
+      />
       {liste}
     </section>
   );

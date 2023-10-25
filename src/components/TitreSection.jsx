@@ -1,10 +1,13 @@
 import { AiOutlineCaretDown } from "react-icons/ai";
 import { useState } from "react";
-const TitreSection = ({ nomcat }) => {
-  const [open, setOpen] = useState(false);
+const TitreSection = ({ nomcat, sendValueToParent }) => {
+  const [open, setOpen] = useState(true);
+
   const toggleButton = () => {
     {
       setOpen(!open);
+      sendValueToParent(open);
+      console.log(open);
     }
   };
   return (
