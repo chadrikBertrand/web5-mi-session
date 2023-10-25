@@ -2,6 +2,7 @@ import SectionMenu from "../components/Section-menu";
 import Header from "../components/Header";
 import "./Menu.css";
 import DBmenu from "../../DBMenu.js";
+import IconPanier from "../components/iconPanier";
 
 const Menu = () => {
   const liste = Object.keys(DBmenu).map((section, i) => {
@@ -13,6 +14,7 @@ const Menu = () => {
       <Header />
       <h1 className="Titre-page mt-6 text-4xl">Mon Menu</h1>
       {liste}
+      <IconPanier />
     </section>
   );
 };
