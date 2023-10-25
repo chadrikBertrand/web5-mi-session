@@ -8,7 +8,6 @@ const SectionMenu = ({ section }) => {
     setChildValue(value);
     console.log(value);
   };
-
   const liste = section.items.map((item, i) => {
     return isChildValue ? <FicheMenu key={i} item={item} /> : null;
   });
@@ -18,6 +17,7 @@ const SectionMenu = ({ section }) => {
       <TitreSection
         nomcat={section.nomCategorie}
         sendValueToParent={receiveChildValue}
+        fond={section.fond}
       />
       {liste}
     </section>
