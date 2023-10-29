@@ -8,7 +8,7 @@ const FicheMenu = ({ item }) => {
     const menu = Object.keys(data.menu).map(({nom,img,prix,desc}, i)=>{
         return FicheMenu key={i}
 
-        .find te retourne suelement un élément 
+        .find te retourne suelemecnt un élément 
 
         .filter te retroune un tableau d'element
     })
