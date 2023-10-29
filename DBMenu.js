@@ -22,7 +22,7 @@ const menu = {
   },
   entree: {
     nomCategorie: "Entrées",
-    fond: "test",
+    fond: "fond-entree",
     items: [
       {
         nom: "Salade du Jardin des Laurentides",
@@ -42,7 +42,7 @@ const menu = {
   },
   plats: {
     nomCategorie: "Les plats principaux",
-    fond: "test",
+    fond: "fond-plats",
     items: [
       {
         nom: "Sandwich du jardin",
@@ -69,7 +69,7 @@ const menu = {
   },
   dessert: {
     nomCategorie: "Le dessert",
-    fond: "the-glacee",
+    fond: "fond-dessert",
     items: [
       {
         nom: "1 Beigne de patate",

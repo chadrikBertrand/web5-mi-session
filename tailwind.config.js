@@ -13,11 +13,11 @@ export default {
       backgroundImage: {
         "fond-breuvage":
           "linear-gradient(to left, black, transparent), url('src/assets/fond-breuvage.jpg')",
-        "the-glacee":
-          "linear-gradient(to left, black, transparent), url('/src/assets/the-glacee.jpg')",
-        test: "linear-gradient(to left, black, transparent), url('/src/assets/sean-mcclintock-789423-unsplash.jpg')",
+        "fond-entree":
+          "linear-gradient(to left, black, transparent), url('/src/assets/pexels-julie-aagaard-2097090.jpg')",
+        "fond-plats": "linear-gradient(to left, black, transparent), url('/src/assets/pexels-muffin-creatives-10218397.jpg')",
         "fond-dessert":
-          "linear-gradient(to left, black, transparent), url('/src/assets/fond-breuvage.jpg')",
+          "linear-gradient(to left, black, transparent), url('/src/assets/pexels-ehioma-osih-11193999.jpg')",
       },
       rotate: {
         270: "270deg",
