@@ -1,6 +1,7 @@
 const menu = {
   breuvage: {
     nomCategorie: "Breuvages",
+    fond: "fond-breuvage",
     items: [
       {
         nom: "Café",
@@ -21,10 +22,11 @@ const menu = {
   },
   entree: {
     nomCategorie: "Entrées",
+    fond: "test",
     items: [
       {
         nom: "Salade du Jardin des Laurentides",
-        img: "src/assets/salade.jpg",
+        img: "src/assets/ana-tavares-598958-unsplash.jpg",
         prix: "7.00$",
         description:
           "Cette salade est réalisée à partir des produits du Jardin des Laurentides situé à Mirabel. Fabriqué à partir d’un mélange de salade mesclun, de tomates de serres, concombres et carottes biologiques de champ ainsi que d’une vinaigrette à partir de sirop de bouleau et de moutarde des champs.",
@@ -40,10 +42,11 @@ const menu = {
   },
   plats: {
     nomCategorie: "Les plats principaux",
+    fond: "test",
     items: [
       {
         nom: "Sandwich du jardin",
-        img: "src/assets/sandwich-vege.jpg",
+        img: "src/assets/monika-grabkowska-513682-unsplash.jpg",
         prix: "10.00$",
         description:
           "Le sandwich du jardin est réalisé à partir des légumes biologiques produits par le Jardin des Laurentides situé à Mirabel. Le pain utilisé est d’une fabrication artisanale de la boulangerie des Monts à Saint-Jovite. Le fromage provient de la Fromagerie du Diable de Mont-Tremblant. Le brie utilisé est fait à partir de lait de vache en liberté dans les pâturages des montages de la région.",
@@ -66,6 +69,7 @@ const menu = {
   },
   dessert: {
     nomCategorie: "Le dessert",
+    fond: "the-glacee",
     items: [
       {
         nom: "1 Beigne de patate",
@@ -75,14 +79,14 @@ const menu = {
           "Les beignes de patate sont d’une fabrication artisanale basée sur une recette ancestrale. Les pommes de terre proviennent de la Ferme Hector Gagné de Mirabel. Ces beignes nécessitent aussi du sucre d’érable de l’Érablière du Nord de Sainte-Agathe.",
       },
       {
-        nom: "3 Beignes de patate",
+        nom: "3 Beigne de patate",
         img: "src/assets/thomas-kelley-77413-unsplash.jpg",
         prix: "6.00$",
         description:
           "Les beignes de patate sont d’une fabrication artisanale basée sur une recette ancestrale. Les pommes de terre proviennent de la Ferme Hector Gagné de Mirabel. Ces beignes nécessitent aussi du sucre d’érable de l’Érablière du Nord de Sainte-Agathe.",
       },
       {
-        nom: "6 Beignes de patate",
+        nom: "6 Beigne de patate",
         img: "src/assets/thomas-kelley-77413-unsplash.jpg",
         prix: "10.00$",
         description:

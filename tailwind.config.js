@@ -12,10 +12,12 @@ export default {
     extend: {
       backgroundImage: {
         "fond-breuvage":
+          "linear-gradient(to left, black, transparent), url('src/assets/fond-breuvage.jpg')",
+        "the-glacee":
+          "linear-gradient(to left, black, transparent), url('/src/assets/the-glacee.jpg')",
+        test: "linear-gradient(to left, black, transparent), url('/src/assets/sean-mcclintock-789423-unsplash.jpg')",
+        "fond-dessert":
           "linear-gradient(to left, black, transparent), url('/src/assets/fond-breuvage.jpg')",
-        "fond-entree": 'url("/src/assets/images/fond-breuvage.jpg")',
-        "fond-plats": 'url("/src/assets/images/fond-breuvage.jpg")',
-        "fond-dessert": 'url("/src/assets/images/fond-breuvage.jpg")',
       },
       rotate: {
         270: "270deg",
