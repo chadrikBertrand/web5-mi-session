@@ -26,7 +26,7 @@ const menu = {
     items: [
       {
         nom: "Salade du Jardin des Laurentides",
-        img: "src/assets/ana-tavares-598958-unsplash.jpg",
+        img: "src/assets/salade.jpg",
         prix: "7.00$",
         description:
           "Cette salade est réalisée à partir des produits du Jardin des Laurentides situé à Mirabel. Fabriqué à partir d’un mélange de salade mesclun, de tomates de serres, concombres et carottes biologiques de champ ainsi que d’une vinaigrette à partir de sirop de bouleau et de moutarde des champs.",
@@ -46,7 +46,7 @@ const menu = {
     items: [
       {
         nom: "Sandwich du jardin",
-        img: "src/assets/monika-grabkowska-513682-unsplash.jpg",
+        img: "src/assets/sandwich-vege.jpg",
         prix: "10.00$",
         description:
           "Le sandwich du jardin est réalisé à partir des légumes biologiques produits par le Jardin des Laurentides situé à Mirabel. Le pain utilisé est d’une fabrication artisanale de la boulangerie des Monts à Saint-Jovite. Le fromage provient de la Fromagerie du Diable de Mont-Tremblant. Le brie utilisé est fait à partir de lait de vache en liberté dans les pâturages des montages de la région.",
