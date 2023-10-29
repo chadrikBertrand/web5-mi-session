@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <section className="flex flex-col justify-center items-center">
       <Header />
-      <h1 className="Titre-page mt-6 text-4xl">Mon Menu</h1>
+      <h1 className="Titre-page mt-10 text-6xl font-cool text-orange-reg">Notre Menu</h1>
       {liste}
       <IconPanier />
     </section>

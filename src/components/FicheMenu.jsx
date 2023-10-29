@@ -31,8 +31,8 @@ const FicheMenu = ({ item }) => {
         />
         <BsPlus className="ajout absolute right-8 bottom-4 text-5xl rounded-full bg-jaune-reg text-white" />
       </div>
-      <div className="info-item relative flex flex-row h-16 items-center w-full place-content-between p-5">
-        <p className="nom-item justify-start">{nom}</p>
+      <div className="info-item relative flex flex-row h-18 w-full items-center  place-content-between p-5 font-butler text-2xl font-medium">
+        <p className="nom-item justify-start w-3/4 ">{nom}</p>
         <p className="prix justify-end">{prix}</p>
       </div>
     </div>
