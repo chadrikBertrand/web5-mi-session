@@ -32,3 +32,4 @@ const TitreSection = ({ nomcat, sendValueToParent, fond }) => {
   );
 };
 export default TitreSection;
+// ${"bg-"+fond}
