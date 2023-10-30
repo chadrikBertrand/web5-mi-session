@@ -8,10 +8,10 @@ const TitreSection = ({ nomcat, sendValueToParent, fond }) => {
     {
       setOpen(!open);
       sendValueToParent(open);
-      console.log(open);
+      // console.log(open);
     }
   };
-  console.log("bg-" + fond);
+  // console.log("bg-" + fond);
   return (
     <div
       className={`titre-section flex flex-row ${

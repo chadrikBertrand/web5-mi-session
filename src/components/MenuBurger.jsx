@@ -6,7 +6,7 @@ const MenuBurger = ({ sendValueToParent }) => {
     e.preventDefault();
     setOpen(!open);
     sendValueToParent(open);
-    console.log(open);
+    // console.log(open);
     const burger = document.querySelector(".burger");
     burger.classList.toggle("animate");
   };

@@ -6,7 +6,7 @@ const SectionMenu = ({ section }) => {
   const [isChildValue, setChildValue] = useState(false);
   const receiveChildValue = (value) => {
     setChildValue(value);
-    console.log(value);
+    // console.log(value);
   };
   const liste = section.items.map((item, i) => {
     return isChildValue ? <FicheMenu key={i} item={item} /> : null;

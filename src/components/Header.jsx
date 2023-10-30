@@ -7,7 +7,7 @@ const Header = () => {
   const [open, setOpen] = useState(true);
   const receiveChildValue = (value) => {
     setOpen(value);
-    console.log(value);
+    // console.log(value);
   };
 
   return (
