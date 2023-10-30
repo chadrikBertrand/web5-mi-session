@@ -1,19 +1,15 @@
 import { BsPlus } from "react-icons/bs";
 import "./fiche-menu.css";
+import { useNavigate } from "react-router";
 
 const FicheMenu = ({ item }) => {
-  const { nom, img, prix, desc } = item;
-  {
-    /*
-    const menu = Object.keys(data.menu).map(({nom,img,prix,desc}, i)=>{
-        return FicheMenu key={i}
-
-        .find te retourne suelemecnt un élément 
-
-        .filter te retroune un tableau d'element
-    })
-    */
-  }
+  const { nom, img, prix, descripiton, Slug } = item;
+  const navigate = useNavigate();
+  const toDetail = () => {
+    console.log(item);
+    navigate(`/detail/${item.Slug}`, { state: item });
+  };
+  // console.log(item);
   return (
     <div
       className="fiche-menu flex flex-col relative m-auto mt-6 items-center justify-center rounded-3xl shadow-2xl"
@@ -22,6 +18,7 @@ const FicheMenu = ({ item }) => {
       <div
         className="image relative flex items-start"
         style={{ width: "100%" }}
+        onClick={toDetail}
       >
         <img
           src={img}
@@ -39,3 +36,13 @@ const FicheMenu = ({ item }) => {
   );
 };
 export default FicheMenu;
+
+/*
+    const menu = Object.keys(data.menu).map(({nom,img,prix,desc}, i)=>{
+        return FicheMenu key={i}
+
+        .find te retourne suelemecnt un élément 
+
+        .filter te retroune un tableau d'element
+    })
+    */

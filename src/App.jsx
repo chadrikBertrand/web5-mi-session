@@ -9,6 +9,7 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
+import Detail from "./pages/Detail";
 
 const App = () => {
   const routes = [
@@ -40,6 +41,10 @@ const App = () => {
         {
           path: "num-de-commande",
           element: <NumDeCommande />,
+        },
+        {
+          path: "detail/:Slug",
+          element: <Detail />,
         },
       ],
     },

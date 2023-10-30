@@ -5,16 +5,19 @@ const menu = {
     items: [
       {
         nom: "Café",
+        Slug: "cafe",
         img: "src/assets/cafe.jpg",
         prix: "3.50$",
       },
       {
         nom: "Boissons gazeuses",
+        Slug: "boissons-gazeuses",
         img: "src/assets/boisson-gaseuses.jpg",
         prix: "3.00$",
       },
       {
         nom: "Thé glacé",
+        Slug: "the-glacee",
         img: "src/assets/the-glacee.jpg",
         prix: "4.00$",
       },
@@ -26,6 +29,7 @@ const menu = {
     items: [
       {
         nom: "Salade du Jardin des Laurentides",
+        Slug: "salade-du-jardin-des-laurentides",
         img: "src/assets/salade.jpg",
         prix: "7.00$",
         description:
@@ -33,6 +37,7 @@ const menu = {
       },
       {
         nom: "Entrée de chips maison aux épices Boréales",
+        Slug: "entree-de-chips-maison-aux-epices-boreales",
         img: "src/assets/sean-mcclintock-789423-unsplash.jpg",
         prix: "5.00$",
         description:
@@ -46,6 +51,7 @@ const menu = {
     items: [
       {
         nom: "Sandwich du jardin",
+        Slug: "sandwich-du-jardin",
         img: "src/assets/sandwich-vege.jpg",
         prix: "10.00$",
         description:
@@ -53,6 +59,7 @@ const menu = {
       },
       {
         nom: "Trilogie de mini poulet burger",
+        Slug: "trilogie-de-mini-poulet-burger",
         img: "src/assets/sameer-waskar-488251-unsplash.jpg",
         prix: "12.00$",
         description:
@@ -60,6 +67,7 @@ const menu = {
       },
       {
         nom: "Sandwich du bûcheron",
+        Slug: "sandwich-du-bucheron",
         img: "src/assets/19326390.jpg",
         prix: "15.00$",
         description:
@@ -73,6 +81,7 @@ const menu = {
     items: [
       {
         nom: "1 Beigne de patate",
+        Slug: "1-beigne-de-patate",
         img: "src/assets/thomas-kelley-77413-unsplash.jpg",
         prix: "2.50$",
         description:
@@ -80,6 +89,7 @@ const menu = {
       },
       {
         nom: "3 Beigne de patate",
+        Slug: "3-beigne-de-patate",
         img: "src/assets/thomas-kelley-77413-unsplash.jpg",
         prix: "6.00$",
         description:
@@ -87,6 +97,7 @@ const menu = {
       },
       {
         nom: "6 Beigne de patate",
+        Slug: "6-beigne-de-patate",
         img: "src/assets/thomas-kelley-77413-unsplash.jpg",
         prix: "10.00$",
         description:
