@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import Panier from "./components/Panier";
 import Facture from "./pages/Facture";
 import Menu from "./pages/Menu";
+import NumDeCommande from "./pages/NumDeCommande";
 import {
   Navigate,
   RouterProvider,
@@ -35,6 +36,10 @@ const App = () => {
         {
           path: "authentification",
           element: <Authentification />,
+        },
+        {
+          path: "num-de-commande",
+          element: <NumDeCommande />,
         },
       ],
     },

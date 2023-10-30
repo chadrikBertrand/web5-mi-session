@@ -1,6 +1,6 @@
 import "./menu-burger.css";
 import { useState } from "react";
-const MenuBurger = (sendValueToParent) => {
+const MenuBurger = ({ sendValueToParent }) => {
   const [open, setOpen] = useState(false);
   const toggleButton = (e) => {
     e.preventDefault();
@@ -12,7 +12,11 @@ const MenuBurger = (sendValueToParent) => {
   };
 
   return (
-    <label className={`burger ${open ? 'animate':''}`} htmlFor="burger" onClick={toggleButton}>
+    <label
+      className={`burger ${open ? "animate" : ""} z-50`}
+      htmlFor="burger"
+      onClick={toggleButton}
+    >
       <input type="checkbox" id="burger" />
       <span></span>
       <span></span>
