@@ -3,7 +3,7 @@ import "./fiche-menu.css";
 import { useNavigate } from "react-router";
 
 const FicheMenu = ({ item }) => {
-  const { nom, img, prix, descripiton, Slug } = item;
+  const { nom, img, prix, description, Slug } = item;
   const navigate = useNavigate();
   const toDetail = () => {
     console.log(item);
