@@ -7,6 +7,10 @@ const Panier = () => {
   const retour = () => {
     navigation("/menu");
   };
+
+  const facture = () => {
+    navigation("/facture");
+  };
   return (
     <div className="fiche-detail flex flex-col items-center bg-white h-screen font-cool">
       <div className="entete bg-gris-fonce w-screen flex justify-center">
@@ -18,14 +22,31 @@ const Panier = () => {
           className="absolute text-white text-6xl top-6 right-6"
         />
       </div>
-      <div className="items-panier">
-        <div className="item-panier flex flex-row w-screen my-6 items-center place-content-around">
-          <p className="nom text-2xl w-1/3">
+      <div className="items-panier flex flex-col place-content-evenly">
+        <div className="item-panier flex flex-row w-screen my-6 items-center place-content-evenly mb-10">
+          <p className="nom text-2xl w-1/3 font-CoolCond">
             Entrée de chips maison aux épices Boréales
           </p>
           <AjoutPanier />
-          <p className="prix text-4xl">5,00$</p>
+          <p className="prix text-4xl font-butler font-medium">5,00$</p>
         </div>
+        <div className="item-panier flex flex-row w-screen my-6 items-center place-content-evenly mb-10">
+          <p className="nom text-2xl w-1/3 font-CoolCond">
+            Boissons gazeuses
+          </p>
+          <AjoutPanier />
+          <p className="prix text-4xl font-butler font-medium">3,00$</p>
+        </div>
+        <div className="item-panier flex flex-row w-screen my-6 items-center place-content-evenly mb-10">
+          <p className="nom text-2xl w-1/3 font-CoolCond">
+            3 Beignes de patates
+          </p>
+          <AjoutPanier />
+          <p className="prix text-4xl font-butler font-medium">6,00$</p>
+        </div>
+      </div>
+      <div className="payer-facture w-full absolute bottom-0 flex justify-center p-6 bg-gris-fonce" onClick={facture}>
+        <p className="text-white text-2xl" >Payer la facture</p>
       </div>
     </div>
   );

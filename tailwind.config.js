@@ -11,6 +11,7 @@ export default {
         "Butler",
         "sans-serif",
       ],
+      CoolCond:["Coolvetica Condensed", "sans-serif"]
     },
     extend: {
       backgroundImage: {
