@@ -31,9 +31,7 @@ const Panier = () => {
           <p className="prix text-4xl font-butler font-medium">5,00$</p>
         </div>
         <div className="item-panier flex flex-row w-screen my-6 items-center place-content-evenly mb-10">
-          <p className="nom text-2xl w-1/3 font-CoolCond">
-            Boissons gazeuses
-          </p>
+          <p className="nom text-2xl w-1/3 font-CoolCond">Boissons gazeuses</p>
           <AjoutPanier />
           <p className="prix text-4xl font-butler font-medium">3,00$</p>
         </div>
@@ -45,8 +43,11 @@ const Panier = () => {
           <p className="prix text-4xl font-butler font-medium">6,00$</p>
         </div>
       </div>
-      <div className="payer-facture w-full absolute bottom-0 flex justify-center p-6 bg-gris-fonce" onClick={facture}>
-        <p className="text-white text-2xl" >Payer la facture</p>
+      <div
+        className="payer-facture w-full absolute bottom-0 flex justify-center p-6 bg-gris-fonce"
+        onClick={facture}
+      >
+        <p className="text-white text-4xl text-CoolCond">Payer la facture</p>
       </div>
     </div>
   );

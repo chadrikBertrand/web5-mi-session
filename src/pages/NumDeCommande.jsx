@@ -35,8 +35,8 @@ const NumDeCommande = () => {
             <BsCheckLg></BsCheckLg>
           </motion.div>
         </div>
-        <div className="wrapper-texte flex flex-col">
-          <div className="remerciement mb-6 -mt-4">
+        <div className="wrapper-texte flex flex-col ">
+          <div className="remerciement mb-6 -mt-4 flex justify-center">
             <p className="text-4xl font-CoolCond">
               Merci pour votre commande !!!
             </p>
