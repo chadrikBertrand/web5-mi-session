@@ -10,6 +10,9 @@ const Detail = () => {
   const retour = () => {
     navigation("/menu");
   };
+  const panier = () => {
+    navigation("/panier");
+  };
   console.log(item);
   return (
     <div className="fiche-detail flex flex-col items-center bg-white h-screen font-cool">
@@ -34,7 +37,7 @@ const Detail = () => {
         {item.nom}
       </div>
       <div className="paragraphe m-4 ">{item.description}</div>
-      <div className="add bg-gris-fonce text-white w-screen flex justify-center fixed bottom-0 py-6 text-4xl">
+      <div onClick={panier} className="add bg-gris-fonce text-white w-screen flex justify-center fixed bottom-0 py-6 text-4xl ">
         Ajouter au panier
       </div>
     </div>
