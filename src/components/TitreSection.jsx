@@ -11,12 +11,13 @@ const TitreSection = ({ nomcat, sendValueToParent, fond }) => {
       // console.log(open);
     }
   };
-  // console.log("bg-" + fond);
+
+  const fondClass = `bg-${fond}`;
+  console.log(fondClass);
   return (
     <div
-      className={`titre-section flex flex-row ${
-        "bg-" + fond
-      } bg-cover bg-right m-auto place-content-between items-center`}
+      className={`titre-section flex flex-row ${fondClass}
+       bg-cover bg-right m-auto place-content-between items-center`}
       style={{ height: "100px" }}
     >
       <h2 className="titre h-16 flex justify-center items-center text-rouge-pale ml-4 text-4xl">

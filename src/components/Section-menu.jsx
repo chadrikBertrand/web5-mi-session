@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import FicheMenu from "./FicheMenu";
 import TitreSection from "./TitreSection";
 import { useState } from "react";
+
 const SectionMenu = ({ section }) => {
   const [isChildValue, setChildValue] = useState(false);
   const receiveChildValue = (value) => {
