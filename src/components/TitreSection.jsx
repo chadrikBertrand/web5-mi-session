@@ -8,7 +8,6 @@ const TitreSection = ({ nomcat, sendValueToParent, fond }) => {
     {
       setOpen(!open);
       sendValueToParent(open);
-      // console.log(open);
     }
   };
 
