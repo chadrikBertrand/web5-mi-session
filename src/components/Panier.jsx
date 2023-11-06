@@ -1,6 +1,7 @@
 import { CgClose } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 import AjoutPanier from "./AjoutPanier";
+import { motion } from "framer-motion";
 
 const Panier = () => {
   const navigation = useNavigate();
@@ -12,7 +13,13 @@ const Panier = () => {
     navigation("/facture");
   };
   return (
-    <div className="fiche-detail flex flex-col items-center bg-white h-screen font-cool">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      exit={{ opacity: 0 }}
+      className="fiche-detail flex flex-col items-center bg-white h-screen font-cool"
+    >
       <div className="entete bg-gris-fonce w-screen flex justify-center">
         <h2 className="text-4xl my-8 uppercase text-white tracking-wider">
           Panier
@@ -49,7 +56,7 @@ const Panier = () => {
       >
         <p className="text-white text-4xl text-CoolCond">Payer la facture</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Panier;
