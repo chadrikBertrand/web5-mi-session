@@ -12,7 +12,16 @@ const TitreSection = ({ nomcat, sendValueToParent, fond }) => {
   };
 
   const fondClass = `bg-${fond}`;
-  console.log(fondClass);
+  const fondBreuv = "bg-fond-breuvage";
+  const fondEntree = "bg-fond-entree";
+  const fondPlats = "bg-fond-plats";
+  const fondDessert = "bg-fond-dessert";
+  console.log(fondClass + " class");
+  console.log(fondBreuv + " breuv");
+  console.log(fondEntree + " entree");
+  console.log(fondPlats + " plats");
+  console.log(fondDessert + " dessert");
+  // si je mets pas les logs et les const mes images load pas...
   return (
     <div
       className={`titre-section flex flex-row ${fondClass}
@@ -35,4 +44,4 @@ const TitreSection = ({ nomcat, sendValueToParent, fond }) => {
   );
 };
 export default TitreSection;
-// ${"bg-"+fond}
+// ${fondClass}
