@@ -11,10 +11,7 @@ const FicheMenu = ({ item }) => {
   };
   // console.log(item);
   return (
-    <div
-      className="fiche-menu flex flex-col relative m-auto mt-6 items-center justify-center rounded-3xl shadow-2xl"
-      style={{ width: "90%" }}
-    >
+    <div className="fiche-menu flex flex-col relative w-11/12 m-auto mt-6 items-center justify-center rounded-3xl shadow-2xl xl:w-5/12 xl:mx-8">
       <div
         className="image relative flex items-start"
         style={{ width: "100%" }}

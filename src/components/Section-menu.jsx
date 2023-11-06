@@ -20,7 +20,9 @@ const SectionMenu = ({ section }) => {
         sendValueToParent={receiveChildValue}
         fond={section.fond}
       />
-      {liste}
+      <div className="items flex flex-col xl:flex-row xl:flex-wrap">
+        {liste}
+      </div>
     </section>
   );
 };
