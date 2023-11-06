@@ -21,15 +21,15 @@ const Detail = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       exit={{ opacity: 0 }}
-      className="fiche-detail flex flex-col items-center bg-white h-screen font-cool"
+      className="fiche-detail flex flex-col items-center bg-white h-screen font-cool xl:w-1/2 xl:mx-auto"
     >
-      <div className="entete bg-gris-fonce w-screen flex justify-center">
-        <h2 className="text-4xl my-8 uppercase text-white tracking-wider">
+      <div className="entete bg-gris-fonce w-screen flex justify-center xl:w-full xl:relative xl:bg-rouge-pale">
+        <h2 className="text-4xl my-8 uppercase text-white tracking-wider ">
           Détail de l'item
         </h2>
         <CgClose
           onClick={retour}
-          className="absolute text-white text-6xl top-6 right-6"
+          className="absolute text-white text-6xl top-6 right-6 xl:right-2"
         />
       </div>
       <div className="flex justify-center items-center my-4 w-11/12">
@@ -46,7 +46,7 @@ const Detail = () => {
       <div className="paragraphe m-4 ">{item.description}</div>
       <div
         onClick={panier}
-        className="add bg-gris-fonce text-white w-screen flex justify-center fixed bottom-0 py-6 text-4xl "
+        className="add bg-gris-fonce text-white w-screen flex justify-center fixed bottom-0 py-6 text-4xl xl:w-1/2 xl:bottom-0 xl:py-8 xl:text-5xl xl:bg-rouge-pale"
       >
         Ajouter au panier
       </div>
