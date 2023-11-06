@@ -35,8 +35,8 @@ const TitreSection = ({ nomcat, sendValueToParent, fond }) => {
       <AiOutlineCaretDown
         className={
           open
-            ? "text-rouge-pale text-5xl rotate-270 mr-8"
-            : "text-rouge-pale text-5xl mr-8"
+            ? "text-rouge-pale text-5xl -rotate-90 mr-8 transition-transform duration-500 ease-in-out "
+            : "text-rouge-pale text-5xl mr-8 transition-transform duration-500 ease-in-out"
         }
         onClick={toggleButton}
       />
