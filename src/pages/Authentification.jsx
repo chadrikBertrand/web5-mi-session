@@ -1,6 +1,7 @@
 import "./authentification.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Authentification = () => {
   const [connecter, setConnecter] = useState(true);
@@ -56,7 +57,13 @@ const Authentification = () => {
   };
 
   return (
-    <div className="form-container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+      className="form-container"
+    >
       <p className="title">{connecter ? "Se connecter" : "S'inscrire"}</p>
       <form className="form">
         {connecter ? (
@@ -159,7 +166,7 @@ const Authentification = () => {
           {connecter ? "S'inscrire" : "Se connecter"}
         </a>
       </p>
-    </div>
+    </motion.div>
   );
 };
 

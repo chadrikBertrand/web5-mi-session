@@ -1,6 +1,7 @@
 import { useLocation } from "react-router";
 import { CgClose } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Detail = () => {
   const location = useLocation();
@@ -15,7 +16,13 @@ const Detail = () => {
   };
   console.log(item);
   return (
-    <div className="fiche-detail flex flex-col items-center bg-white h-screen font-cool">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+      className="fiche-detail flex flex-col items-center bg-white h-screen font-cool"
+    >
       <div className="entete bg-gris-fonce w-screen flex justify-center">
         <h2 className="text-4xl my-8 uppercase text-white tracking-wider">
           Détail de l'item
@@ -37,10 +44,13 @@ const Detail = () => {
         {item.nom}
       </div>
       <div className="paragraphe m-4 ">{item.description}</div>
-      <div onClick={panier} className="add bg-gris-fonce text-white w-screen flex justify-center fixed bottom-0 py-6 text-4xl ">
+      <div
+        onClick={panier}
+        className="add bg-gris-fonce text-white w-screen flex justify-center fixed bottom-0 py-6 text-4xl "
+      >
         Ajouter au panier
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Detail;

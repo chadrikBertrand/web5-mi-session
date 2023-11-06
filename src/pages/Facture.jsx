@@ -1,6 +1,7 @@
 import { CgClose } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 import AjoutPanier from "../components/AjoutPanier";
+import { motion } from "framer-motion";
 
 const Facture = () => {
   const navigation = useNavigate();
@@ -15,7 +16,13 @@ const Facture = () => {
     navigation("/menu");
   };
   return (
-    <div className="fiche-detail flex flex-col items-center bg-white h-screen font-cool">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+      className="fiche-detail flex flex-col items-center bg-white h-screen font-cool"
+    >
       <div className="entete bg-gris-fonce w-screen flex justify-center">
         <h2 className="text-4xl my-8 uppercase text-white tracking-wider font-CoolCond">
           Détail de la facture
@@ -86,7 +93,7 @@ const Facture = () => {
           <p className="text-white font-CoolCond text-2xl">Payer la commande</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Facture;

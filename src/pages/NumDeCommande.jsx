@@ -7,7 +7,13 @@ const NumDeCommande = () => {
     nav("/menu");
   };
   return (
-    <div className="num-de-commande flex flex-col items-center bg-white h-screen font-cool">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      exit={{ opacity: 0 }}
+      className="num-de-commande flex flex-col items-center bg-white h-screen font-cool"
+    >
       <div className="entete bg-gris-fonce w-screen flex justify-center">
         <h2 className="text-4xl my-8 uppercase text-white tracking-wider font-CoolCond">
           Numéro de commande
@@ -57,7 +63,7 @@ const NumDeCommande = () => {
       >
         <p className="text-white text-4xl ">retour à l'accueil</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default NumDeCommande;

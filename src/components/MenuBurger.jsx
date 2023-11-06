@@ -1,19 +1,19 @@
 import "./menu-burger.css";
 import { useState } from "react";
 const MenuBurger = ({ sendValueToParent }) => {
-  const [open, setOpen] = useState(false);
+  const [localOpen, setLocalOpen] = useState(false);
+
   const toggleButton = (e) => {
     e.preventDefault();
-    setOpen(!open);
-    sendValueToParent(open);
-    // console.log(open);
+    setLocalOpen(!localOpen);
+    sendValueToParent(localOpen);
     const burger = document.querySelector(".burger");
     burger.classList.toggle("animate");
   };
 
   return (
     <label
-      className={`burger ${open ? "animate" : ""} z-50`}
+      className={`burger ${localOpen ? "animate" : ""} z-50`}
       htmlFor="burger"
       onClick={toggleButton}
     >
@@ -24,4 +24,5 @@ const MenuBurger = ({ sendValueToParent }) => {
     </label>
   );
 };
+
 export default MenuBurger;

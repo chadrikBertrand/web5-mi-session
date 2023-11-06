@@ -9,7 +9,6 @@ const Header = () => {
     setOpen(value);
     // console.log(value);
   };
-
   return (
     <header className="h-full flex flex-row items-center place-content-between">
       <div className="logo z-50">
@@ -24,7 +23,7 @@ const Header = () => {
             : "hidden"
         }
       >
-        <Link to="/authentification" className="">
+        <Link to="/authentification" className="mt-16">
           Profile
         </Link>
         <Link to="/menu" className="">

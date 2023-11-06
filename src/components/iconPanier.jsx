@@ -8,7 +8,7 @@ const IconPanier = () => {
   };
   return (
     <div
-      className="fixed flex justify-center items-center right-5 bottom-6 text-white bg-jaune-fonce rounded-full p-2 w-20 h-20 z-50"
+      className="fixed flex justify-center items-center right-5 bottom-20 text-white bg-jaune-fonce rounded-full p-2 w-16 h-16 z-50"
       onClick={onClickHandler}
     >
       <MdOutlineShoppingCart className="text-4xl" />
